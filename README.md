@@ -19,35 +19,34 @@ housing-price-prediction/
 
 Dữ liệu gồm 545 dòng, mỗi dòng là một căn nhà với các thông tin:
 
-| Cột | Ý nghĩa |
-|---|---|
-| price | Giá nhà (biến mục tiêu cần dự báo) |
-| area | Diện tích |
-| bedrooms | Số phòng ngủ |
-| bathrooms | Số phòng tắm |
-| stories | Số tầng |
-| mainroad | Có nằm ở mặt đường lớn không (yes/no) |
-| guestroom | Có phòng khách riêng không (yes/no) |
-| basement | Có tầng hầm không (yes/no) |
-| hotwaterheating | Có hệ thống nước nóng không (yes/no) |
-| airconditioning | Có điều hòa không (yes/no) |
-| parking | Số chỗ đậu xe |
-| prefarea | Có ở khu vực được ưa chuộng không (yes/no) |
+| Cột              | Ý nghĩa                                                    |
+| ---------------- | ---------------------------------------------------------- |
+| price            | Giá nhà (biến mục tiêu cần dự báo)                         |
+| area             | Diện tích                                                  |
+| bedrooms         | Số phòng ngủ                                               |
+| bathrooms        | Số phòng tắm                                               |
+| stories          | Số tầng                                                    |
+| mainroad         | Có nằm ở mặt đường lớn không (yes/no)                      |
+| guestroom        | Có phòng khách riêng không (yes/no)                        |
+| basement         | Có tầng hầm không (yes/no)                                 |
+| hotwaterheating  | Có hệ thống nước nóng không (yes/no)                       |
+| airconditioning  | Có điều hòa không (yes/no)                                 |
+| parking          | Số chỗ đậu xe                                              |
+| prefarea         | Có ở khu vực được ưa chuộng không (yes/no)                 |
 | furnishingstatus | Tình trạng nội thất (furnished/semi-furnished/unfurnished) |
 
 ## Cách chạy
 
 1. Cài thư viện cần thiết:
    ```bash
-   pip install -r requirements.txt
+   pip install pandas scikit-learn
    ```
 2. Chạy chương trình:
    ```bash
-   python src/linear_regression.py
+   python hoi_quy_tt.py
    ```
 3. Chương trình sẽ in ra:
    - Sai số MAE, RMSE và chỉ số R² đánh giá độ chính xác mô hình
-   - Hệ số hồi quy của từng biến, cho biết yếu tố nào ảnh hưởng nhiều đến giá nhà
 
 ## Ghi chú
 
